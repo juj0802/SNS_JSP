@@ -36,7 +36,7 @@
       </dataSource>
     </environment>
   </environments>
-  <mappers>
+  <mappers><!-- 맵핑하는곳 -->
 	<mapper resource="models/user/UserInfoMapper.xml" />
   </mappers>
 </configuration>

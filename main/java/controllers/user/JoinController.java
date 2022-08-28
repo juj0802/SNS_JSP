@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/user/register")
 public class JoinController extends HttpServlet {
-
+/**회원가입페이지로이동*/
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		RequestDispatcher rd = req.getRequestDispatcher("/user/register.jsp");
