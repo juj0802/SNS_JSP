@@ -15,4 +15,14 @@
 		INSERT INTO userinfo (id, name, password, phone) 
 			VALUES (#{id}, #{name}, #{password}, #{phone});
 	</insert>
+	
+	<select id="select" parameterType="models.user.UserInfoDto" resultMap="UserInfoMap">
+	SELECT * FROM userinfo WHERE id = #{id};
+	</select>
+	<select id="order" parameterType="models.user.UserInfoDto" resultMap="UserInfoMap" >
+	SELECT * FROM userinfo ORDER BY regDt DESC
+	</select>
+	
+	
+	
 </mapper>
