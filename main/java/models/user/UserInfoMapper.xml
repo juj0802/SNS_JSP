@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="UserInfoMapper">
+	<resultMap id="userInfoMap" type="models.user.UserInfoDto">
+		<result property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="password" column="password" />
+		<result property="phone" column="phone" />
+		<result property="regDt" column="regDt" />
+		<result property="modDt" column="modDt" />
+	</resultMap>
+	
+	<!-- 회원 추가  -->
+	<insert id="register" parameterType="models.user.UserInfoDto">
+		INSERT INTO userinfo (id, name, password, phone) 
+			VALUES (#{id}, #{name}, #{password}, #{phone});
+	</insert>
+</mapper>
