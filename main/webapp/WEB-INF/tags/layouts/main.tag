@@ -4,13 +4,13 @@
 <%@ taglib prefix="layout" tagdir="/WEB-INF/tags/layouts" %>
 <layout:common>
 	<jsp:attribute name="header">
-		<h1>헤더</h1>
+		
 	</jsp:attribute>
 	<jsp:attribute name="menu">
-		<h2>메인 메뉴</h2>
+		
 	</jsp:attribute>
 	<jsp:attribute name="footer">
-		<h1>푸터</h1>
+	
 	</jsp:attribute>
 	<jsp:body>
 		<jsp:doBody />

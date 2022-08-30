@@ -22,7 +22,9 @@
 	<select id="order" parameterType="models.user.UserInfoDto" resultMap="UserInfoMap" >
 	SELECT * FROM userinfo ORDER BY regDt DESC
 	</select>
-	
+		<select id="count" parameterType="models.user.UserInfoDto" resultType="int">
+		SELECT COUNT(*) FROM userinfo WHERE id=#{id};
+	</select>
 	
 	
 </mapper>
